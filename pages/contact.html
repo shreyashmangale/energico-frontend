@@ -11,26 +11,38 @@
       <div
         class="bg-lime-600 flex justify-between items-center text-slate-50 opacity-1.25 px-4"
       >
-        <h1 class="text-2xl">Call Us Now: 555 376 7872</h1>
+        <h1 class="text-2xl md:block hidden">Call Us Now: 555 376 7872</h1>
         <div class="flex">
           <div class="w-[70px] p-4">
             <a href=""
-              ><img class="w-full" src="../images/facebook-logo.png" alt="facebook-logo"
+              ><img
+                class="w-full"
+                src="../images/facebook-logo.png"
+                alt="facebook-logo"
             /></a>
           </div>
           <div class="w-[70px] p-4">
             <a href=""
-              ><img class="w-full" src="../images/twitter-logo.png" alt="twitter-logo"
+              ><img
+                class="w-full"
+                src="../images/twitter-logo.png"
+                alt="twitter-logo"
             /></a>
           </div>
           <div class="w-[70px] p-4">
             <a href=""
-              ><img class="w-full" src="../images/pinterest-logo.png" alt="pinterest-logo"
+              ><img
+                class="w-full"
+                src="../images/pinterest-logo.png"
+                alt="pinterest-logo"
             /></a>
           </div>
           <div class="w-[70px] p-4">
             <a href=""
-              ><img class="w-full" src="../images/instagram-logo.png" alt="instagram-logo"
+              ><img
+                class="w-full"
+                src="../images/instagram-logo.png"
+                alt="instagram-logo"
             /></a>
           </div>
         </div>
@@ -39,7 +51,9 @@
 
     <main>
       <section>
-        <div class="flex justify-center items-center lg:flex-col py-5 gap-6">
+        <div
+          class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
+        >
           <img
             class="lg:w-1/4 md:w-64 sm:w-48"
             src="../images/logo.png"
@@ -47,13 +61,20 @@
           />
 
           <div
-            class="mt-5 py-1 flex justify-between gap-20 text-2xl text-slate-950 transform scale-x-[120%]"
+            class="lg:flex hidden mt-5 py-1 justify-between gap-20 text-2xl text-slate-950 transform scale-x-[120%]"
           >
-            <p class="p-4"><a href="../index.html">HOME</a></p>
-            <p class="p-4"><a href="./about.html">ABOUT</a></p>
-            <p class="p-4 text-amber-400 underline">
-              <a href="./contact.html">CONTACT US</a>
+            <p class="p-4">
+              <a href="./index.html">HOME</a>
             </p>
+            <p class="p-4 "><a href="#">ABOUT</a></p>
+            <p class="p-4 text-amber-400 underline"><a href="#">CONTACT US</a></p>
+          </div>
+
+          <div class="flex flex-col gap-[2px] lg:hidden">
+            <div class="w-[50px] h-[8px] bg-amber-400"></div>
+            <div class="w-[50px] h-[8px] bg-amber-400"></div>
+            <div class="w-[50px] h-[8px] bg-amber-400"></div>
+            <div class="w-[40px] h-[8px] bg-amber-400"></div>
           </div>
         </div>
 
@@ -61,39 +82,39 @@
           class="bg-lime-600 h-[420px] flex flex-col justify-center items-center text-center"
         >
           <h1
-            class="text-5xl font-extrabold text-white transform scale-[110%] uppercase drop-shadow-md"
+            class="sm:text-5xl text-3xl font-extrabold text-white transform scale-[110%] uppercase drop-shadow-md"
           >
             Contact us
           </h1>
           <h2
-            class="my-8 text-3xl inline-block transform scale-x-[120%] text-white"
+            class="my-8 sm:text-3xl text-2xl inline-block transform scale-x-[120%] text-white"
           >
             Home / <span class="text-amber-400">Contact Us</span>
           </h2>
         </div>
 
         <div class="h-fit grid grid-cols-1 md:grid-cols-2">
-          <div class="px-28 py-12">
+          <div class="sm:px-28 px-4 sm:py-12 py-8">
             <div class="mt-16">
               <h1
-                class="text-5xl font-extrabold text-gray-700 transform origin-left scale-110 tracking-wide"
+                class="sm:text-5xl text-3xl font-extrabold text-gray-700 transform origin-left scale-110 tracking-wide"
               >
                 Get in touch
               </h1>
               <h3
-                class="my-6 text-3xl font-medium text-lime-600 transform origin-left scale-110"
+                class="my-6 sm:text-3xl text-2xl font-medium text-lime-600 transform origin-left scale-110"
               >
-                ENERGICO - AGRICULTURE & GARDEN CARE
+                ENERGICO - Agriculture & Garden Care
               </h3>
             </div>
 
             <div class="mt-20 pe-16">
               <h3
-                class="my-6 text-3xl font-medium text-lime-600 transform origin-left scale-110"
+                class="my-6 sm:text-3xl text-2xl font-medium text-lime-600 transform origin-left scale-110"
               >
                 Toronto Office
               </h3>
-              <p class="text-3xl text-gray-500">
+              <p class="sm:text-3xl text-lg text-gray-500">
                 8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
                 555.376.7872 Fax. 555.376.7873
               </p>
@@ -101,20 +122,20 @@
 
             <div class="my-24 pe-16">
               <h3
-                class="my-6 text-3xl font-medium text-lime-600 transform origin-left scale-110"
+                class="my-6 sm:text-3xl text-2xl font-medium text-lime-600 transform origin-left scale-110"
               >
                 HQ Office (Boston, MA, USA)
               </h3>
-              <p class="text-3xl text-gray-500">
+              <p class="sm:text-3xl text-lg text-gray-500">
                 8949 Kenamar Drive, suite 101 Boston, Ma 92121 Phone.
                 555.376.7872 Fax. 555.376.7873
               </p>
             </div>
           </div>
           <div class="bg-slate-100 pb-20">
-            <div class="mt-16 ps-20 pe-28 py-12">
+            <div class="sm:mt-16 mt-8 sm:ps-20 ps-6 pe-28 py-12">
               <h1
-                class="text-5xl font-extrabold text-gray-700 transform origin-left scale-110 tracking-wide"
+                class="sm:text-5xl text-2xl font-extrabold text-gray-700 transform origin-left scale-110 tracking-wide"
               >
                 Write to us
               </h1>
