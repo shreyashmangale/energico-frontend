@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energico</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="overflow-x-hidden box-border m-0 p-0">
     <header>
@@ -16,20 +19,80 @@
         <div class="p-3 flex">
           <div class="p-4">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
+      >
+        <img
+          class="lg:w-1/4 md:w-64 sm:w-48"
+          src="./images/logo.png"
+          alt="logo"
+        />
+
+        <div
+          class="mt-5 py-1 text-2xl text-slate-950 transform scale-x-[120%]"
+        >
+          <ul class="hidden lg:flex md:flex-row flex-col gap-14">
+            <p class="p-4 text-amber-400 underline">
+              <a href="./index.html">HOME</a>
+            </p>
+            <p class="p-4"><a href="./pages/about.html">ABOUT</a></p>
+            <p class="p-4"><a href="./pages/contact.html">CONTACT US</a></p>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-[2px] lg:hidden" onclick="handleMenu()">
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[40px] h-[8px] bg-amber-400"></div>
+        </div>
+      </div>
+
+      <div id="nav-menu" class="hidden bg-white h-fit">
+          <div
+            class="flex items-center lg:flex-col pb-4 gap-2"
+          >
+            <div
+              class="py-1 mx-auto text-center text-slate-950 transform scale-x-[120%]"
+            >
+              <ul class="flex flex-col gap-4">
+                <p class="p-2 text-lg text-amber-400 underline">
+                  <a href="./index.html">HOME</a>
+                </p>
+                <p class="p-2 text-lg"><a href="./pages/about.html">ABOUT</a></p>
+                <p class="p-2 text-lg"><a href="./pages/contact.html">CONTACT US</a></p>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -38,44 +101,19 @@
     <main>
       <section>
         <div
-          class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
-        >
-          <img
-            class="lg:w-1/4 md:w-64 sm:w-48"
-            src="./images/logo.png"
-            alt="logo"
-          />
-
-          <div
-            class="lg:flex hidden mt-5 py-1 justify-between gap-20 text-2xl text-slate-950 transform scale-x-[120%]"
-          >
-            <p class="p-4 text-amber-400 underline">
-              <a href="./index.html">HOME</a>
-            </p>
-            <p class="p-4"><a href="./pages/about.html">ABOUT</a></p>
-            <p class="p-4"><a href="./pages/contact.html">CONTACT US</a></p>
-          </div>
-
-          <div class="flex flex-col gap-[2px] lg:hidden">
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[40px] h-[8px] bg-amber-400"></div>
-          </div>
-        </div>
-
-        <div
           class="flex justify-center items-center text-center flex-col bg-cover bg-top h-auto w-full bg-no-repeat mb:pb-32 pb-20"
           style="background-image: url('./images/img1.jpg')"
         >
-          <div class="md:w-[25%] flex flex-col sm:mt-16 mt-28 sm:px-8 px-4">
+          <div
+            class="lg:w-[40%] md:w-[50%] flex flex-col sm:mt-16 mt-28 sm:px-8 px-4"
+          >
             <h1
               class="md:text-5xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
             >
               <span class="uppercase">GARDEN CARE</span>
             </h1>
           </div>
-          <div class="md:w-[25%] flex flex-col sm:px-8 px-6">
+          <div class="lg:w-[25%] md:w-[50%] flex flex-col sm:px-8 px-6">
             <h1
               class="md:text-5xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
             >
@@ -84,7 +122,7 @@
           </div>
           <div class="md:w-[38%] text-center my-8">
             <p
-              class="md:text-3xl text-2xl md:px-8 px-5 text-slate-100 md:leading-10 inline-block transform md:scale-x-[120%]"
+              class="md:text-3xl text-2xl md:px-0 px-5 text-slate-100 md:leading-10 inline-block transform md:scale-x-[120%]"
             >
               SO WHENEVER YOU JUST FEEL YOU NEED A PROFESSIONAL HELPING HAND AT
               YOUR GARDEN, CALL US UP!
@@ -142,14 +180,14 @@
         </div>
 
         <div
-          class="flex items-end lg:flex-col bg-cover bg-no-repeat sm:pt-32"
+          class="flex items-end lg:flex-col bg-cover bg-no-repeat lg:pt-32"
           style="
             background-image: url('./images/img10.jpg');
             background-position: right;
           "
         >
           <div
-            class="md:w-[55%] w-full flex flex-col text-start justify-center items-start sm:gap-8 gap-5 transform origin-right md:scale-x-[110%]  sm:px-16 px-8 py-16"
+            class="lg:w-[55%] w-full flex flex-col text-start justify-center items-start sm:gap-8 gap-5 transform origin-right lg:scale-x-[110%] sm:px-16 px-8 py-16 md:px-16"
           >
             <h1 class="sm:text-5xl text-4xl font-extrabold text-gray-700">
               Why Energico?
@@ -166,7 +204,7 @@
             </p>
 
             <button
-              class="text-white text-[15px] border-2 border-white rounded-full py-5 px-12 inline-block transform origin-left scale-x-[110%] bg-yellow-500"
+              class="text-white sm:text-[15px] text-[12px] border-2 border-white rounded-full py-4 px-10 inline-block transform origin-left scale-x-[110%] bg-yellow-500"
             >
               FIND OUT MORE
             </button>
@@ -191,7 +229,7 @@
               The Perfect Garden!
             </h1>
             <button
-              class="text-white text-[15px] rounded-full sm:mt-8 mt-2 sm:py-5 py-3 sm:px-10 px-6 inline-block transform origin-left scale-x-[110%] bg-lime-600"
+              class="text-white text-[12px] rounded-full sm:mt-8 mt-2 sm:py-5 py-3 sm:px-10 px-6 bg-lime-600"
             >
               FIND OUT MORE
             </button>
@@ -199,10 +237,10 @@
         </div>
 
         <div
-          class="flex items-start lg:flex-col sm:bg-center bg-right bg-no-repeat sm:p-24 p-8 w-full h-fit"
+          class="flex items-start lg:flex-col sm:bg-center bg-right bg-no-repeat sm:p-24 px-8 py-10 w-full h-fit"
           style="
             background-image: url('./images/img12.jpg');
-            background-position: 30% 100%;
+            background-position: 50%;
           "
         >
           <div
@@ -214,16 +252,16 @@
               Perform to the Highest Standards
             </h1>
 
-            <div class="sm:w-full w-[75%]">
+            <div class="sm:w-full w-[65%]">
               <p
-                class="sm:text-3xl text-2xl text-gray-500 text-left sm:leading-[50px] leading-[30px] tracking-wide"
+                class="sm:text-3xl text-xl text-gray-500 text-left leading-[30px]"
               >
                 With all kinds of garden design/care, lawn & plants in our
                 range, we're your natural choice!
               </p>
             </div>
             <button
-              class="text-gray-500 sm:text-[16px] text-[12px] font-bold border-2 border-gray-500 rounded-full sm:py-5 py-2 sm:px-16 px-2"
+              class="text-gray-500 sm:text-[16px] text-[12px] font-bold border-2 border-gray-500 rounded-full sm:py-4 py-2 sm:px-16 px-2"
             >
               GET A QUOTE
             </button>
@@ -233,13 +271,15 @@
         <div class="h-fit bg-gray-200 text-center pb-10">
           <div class="sm:pt-[120px] pt-[60px] px-8 py-8">
             <h1
-              class="text-5xl font-extrabold text-gray-700 sm:leading-8 leading-10 transform md:scale-x-110"
+              class="text-5xl font-extrabold text-gray-700 sm:leading-8 leading-10 transform"
             >
               Our Advantages
             </h1>
           </div>
 
-          <div class="sm:mt-16 mt-4 grid grid-cols-1 md:grid-cols-3">
+          <div
+            class="sm:mt-16 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          >
             <div
               class="p-8 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
@@ -346,7 +386,7 @@
         </div>
 
         <div class="h-fit bg-white flex flex-col text-center pb-14">
-          <div class="sm:pt-[120px] pt-[60px] md:px-20 px-8 py-8">
+          <div class="sm:pt-[80px] pt-[40px] md:px-20 px-8 py-8">
             <h1
               class="sm:text-5xl text-3xl text-center font-extrabold text-gray-700 sm:leading-10 md:leading-[60px] leading-10"
             >
@@ -354,18 +394,16 @@
             </h1>
           </div>
 
-          <div class="sm:mt-16 sm:px-10 grid grid-cols-1 md:grid-cols-2">
-            <div class="sm:py-8 sm:px-14 sm:pr-8 text-left bg-transparent">
+          <div class="sm:px-10 grid grid-cols-1 md:grid-cols-2">
+            <div class="sm:py-8 sm:px-10 text-left bg-transparent">
               <div class="w-full">
                 <img class="w-full" src="./images/img21.jpg" alt="img21" />
               </div>
               <div class="sm:mt-8 sm:p-0 p-8">
-                <h3
-                  class="py-4 text-3xl font-medium text-gray-500 transform origin-left sm:scale-x-[115%]"
-                >
+                <h3 class="py-4 text-3xl font-medium text-gray-500">
                   THE LESS CHEMICALS YOU USE, THE BETTER!
                 </h3>
-                <p class="text-3xl text-gray-500 leading-[1.3] tracking-wide">
+                <p class="text-3xl text-gray-500">
                   So, we guess that if you're reading this blog entry now, you
                   are an avid gardener yourself, right? Which in turn means that
                   as we're talking about the ways to compost your garden, the
@@ -373,17 +411,15 @@
                 </p>
               </div>
             </div>
-            <div class="sm:py-8 sm:px-14 sm:pr-8 text-left bg-transparent">
+            <div class="sm:py-8 sm:px-10 text-left bg-transparent">
               <div class="w-full">
                 <img class="w-full" src="./images/img20.jpg" alt="img21" />
               </div>
               <div class="sm:mt-8 sm:p-0 p-8">
-                <h3
-                  class="py-4 text-3xl font-medium text-gray-500 transform origin-left sm:scale-x-[115%]"
-                >
+                <h3 class="py-4 text-3xl font-medium text-gray-500">
                   THE LESS CHEMICALS YOU USE, THE BETTER!
                 </h3>
-                <p class="text-3xl text-gray-500 leading-[1.3] tracking-wide">
+                <p class="text-3xl text-gray-500">
                   So, we guess that if you're reading this blog entry now, you
                   are an avid gardener yourself, right? Which in turn means that
                   as we're talking about the ways to compost your garden, the
@@ -408,19 +444,31 @@
         <div class="mt-2 p-3 flex">
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
           </div>
         </div>
@@ -430,5 +478,7 @@
         </h2>
       </div>
     </footer>
+
+    <script src="./javascript/script.js"></script>
   </body>
 </html>

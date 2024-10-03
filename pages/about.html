@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energico</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="overflow-x-hidden box-border m-0 p-0">
     <header>
@@ -16,19 +19,31 @@
         <div class="p-3 flex">
           <div class="p-4">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
           </div>
         </div>
@@ -56,7 +71,7 @@
             <p class="p-4"><a href="./contact.html">CONTACT US</a></p>
           </div>
 
-          <div class="flex flex-col gap-[2px] lg:hidden">
+          <div class="flex flex-col gap-[2px] lg:hidden" onclick="handleMenu()">
             <div class="w-[50px] h-[8px] bg-amber-400"></div>
             <div class="w-[50px] h-[8px] bg-amber-400"></div>
             <div class="w-[50px] h-[8px] bg-amber-400"></div>
@@ -64,8 +79,26 @@
           </div>
         </div>
 
+        <div id="nav-menu" class="hidden bg-white h-fit">
+          <div class="flex items-center lg:flex-col pb-4 gap-2">
+            <div
+              class="py-1 mx-auto text-center text-slate-950 transform scale-x-[120%]"
+            >
+              <ul class="flex flex-col gap-4">
+                <p class="p-2 text-lg">
+                  <a href="../index.html">HOME</a>
+                </p>
+                <p class="p-2 text-lg text-amber-400 underline">
+                  <a href="#">ABOUT</a>
+                </p>
+                <p class="p-2 text-lg"><a href="contact.html">CONTACT US</a></p>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div
-          class="bg-lime-600 sm:h-[420px] h-[280px]  flex flex-col justify-center items-center text-center"
+          class="bg-lime-600 sm:h-[420px] h-[280px] flex flex-col justify-center items-center text-center"
         >
           <h1
             class="sm:text-5xl text-3xl font-extrabold text-white transform scale-[110%] uppercase drop-shadow-md"
@@ -73,7 +106,7 @@
             About Us
           </h1>
           <h2
-            class="my-8 sm:text-3xl text-2xl  inline-block transform scale-x-[120%] text-white"
+            class="my-8 sm:text-3xl text-2xl inline-block transform scale-x-[120%] text-white"
           >
             Home / <span class="text-amber-400"> About Us</span>
           </h2>
@@ -91,10 +124,10 @@
             WELCOME TO THE TOP RATED EXTERIOR DESIGN COMPANY
           </h3>
           <div class="px-6">
-
             <p class="sm:mt-16 mt-6 sm:text-3xl text-lg text-gray-500">
-              After years of practical (both personal and work-related) experience
-              at hand, our team of passionate gardeners is your only option!
+              After years of practical (both personal and work-related)
+              experience at hand, our team of passionate gardeners is your only
+              option!
             </p>
           </div>
         </div>
@@ -107,11 +140,15 @@
           <div
             class="absolute bottom-0 left-0 sm:w-3/5 w-full sm:h-full h-[60%] sm:px-8 px-3 sm:py-16 py-8 flex flex-col text-start justify-around items-start align-middle bg-white backdrop-opacity-5 backdrop-invert bg-white/60"
           >
-            <h1 class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-left sm:scale-x-110">
+            <h1
+              class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-left sm:scale-x-110"
+            >
               Lawn Mowing & Lawn Care
             </h1>
 
-            <p class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8">
+            <p
+              class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8"
+            >
               If your garden is all nurtured and spruced up, besides improving
               your mood it will also increase the property value, by much! This
               means, that as a team of absolute gardening experts, we'll be
@@ -128,7 +165,6 @@
           </div>
         </div>
 
-
         <div
           class="relative md:h-[630px] h-[900px] bg-cover bg-center bg-no-repeat flex justify-end"
           style="background-image: url('../images/img28-1410x487.jpg')"
@@ -136,9 +172,15 @@
           <div
             class="absolute bottom-0 right-0 sm:w-3/5 w-full sm:h-full h-[60%] sm:px-8 px-3 sm:py-16 py-8 flex flex-col sm:text-end text-start justify-around sm:items-end items-start align-middle bg-white backdrop-opacity-5 backdrop-invert bg-white/60"
           >
-            <h1 class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-right sm:scale-x-110">Garden Care</h1>
+            <h1
+              class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-right sm:scale-x-110"
+            >
+              Garden Care
+            </h1>
 
-            <p class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8">
+            <p
+              class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8"
+            >
               If your garden is all nurtured and spruced up, besides improving
               your mood it will also increase the property value, by much! This
               means, that as a team of absolute gardening experts, we'll be
@@ -161,11 +203,15 @@
           <div
             class="absolute bottom-0 left-0 sm:w-3/5 w-full sm:h-full h-[60%] sm:px-8 px-3 sm:py-16 py-8 flex flex-col text-start justify-around items-start align-middle bg-white backdrop-opacity-5 backdrop-invert bg-white/60"
           >
-            <h1 class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-left sm:scale-x-110">
+            <h1
+              class="sm:text-5xl text-4xl sm:font-extrabold font-bold text-lime-600 transform origin-left sm:scale-x-110"
+            >
               Flowers & Plants
             </h1>
 
-            <p class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8">
+            <p
+              class="md:text-3xl text-xl text-gray-600 sm:leading-10 leading-8"
+            >
               If your garden is all nurtured and spruced up, besides improving
               your mood it will also increase the property value, by much! This
               means, that as a team of absolute gardening experts, we'll be
@@ -197,19 +243,31 @@
         <div class="mt-2 p-3 flex">
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
           </div>
         </div>
@@ -219,5 +277,7 @@
         </h2>
       </div>
     </footer>
+
+    <script src="../javascript/script.js"></script>
   </body>
 </html>

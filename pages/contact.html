@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energico</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="overflow-x-hidden box-border m-0 p-0">
     <header>
@@ -16,20 +19,79 @@
         <div class="p-3 flex">
           <div class="p-4">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="p-4">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
+      >
+        <img
+          class="lg:w-1/4 md:w-64 sm:w-48"
+          src="../images/logo.png"
+          alt="logo"
+        />
+
+        <div
+          class="lg:flex hidden mt-5 py-1 justify-between gap-20 text-2xl text-slate-950 transform scale-x-[120%]"
+        >
+          <p class="p-4">
+            <a href="../index.html">HOME</a>
+          </p>
+          <p class="p-4"><a href="./about.html">ABOUT</a></p>
+          <p class="p-4 text-amber-400 underline">
+            <a href="#">CONTACT US</a>
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-[2px] lg:hidden" onclick="handleMenu()">
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[50px] h-[8px] bg-amber-400"></div>
+          <div class="w-[40px] h-[8px] bg-amber-400"></div>
+        </div>
+      </div>
+
+      <div id="nav-menu" class="hidden bg-white h-fit">
+        <div class="flex items-center lg:flex-col pb-4 gap-2">
+          <div
+            class="py-1 mx-auto text-center text-2xl text-slate-950 transform scale-x-[120%]"
+          >
+            <ul class="flex flex-col gap-4">
+              <p class="p-2 text-lg">
+                <a href="../index.html">HOME</a>
+              </p>
+              <p class="p-2 text-lg"><a href="./about.html">ABOUT</a></p>
+              <p class="p-2 text-lg text-amber-400 underline">
+                <a href="#">CONTACT US</a>
+              </p>
+            </ul>
           </div>
         </div>
       </div>
@@ -37,33 +99,6 @@
 
     <main>
       <section>
-        <div
-          class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
-        >
-          <img
-            class="lg:w-1/4 md:w-64 sm:w-48"
-            src="../images/logo.png"
-            alt="logo"
-          />
-
-          <div
-            class="lg:flex hidden mt-5 py-1 justify-between gap-20 text-2xl text-slate-950 transform scale-x-[120%]"
-          >
-            <p class="p-4">
-              <a href="../index.html">HOME</a>
-            </p>
-            <p class="p-4 "><a href="./about.html">ABOUT</a></p>
-            <p class="p-4 text-amber-400 underline"><a href="#">CONTACT US</a></p>
-          </div>
-
-          <div class="flex flex-col gap-[2px] lg:hidden">
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[50px] h-[8px] bg-amber-400"></div>
-            <div class="w-[40px] h-[8px] bg-amber-400"></div>
-          </div>
-        </div>
-
         <div
           class="bg-lime-600 sm:h-[420px] h-[280px] flex flex-col justify-center items-center text-center"
         >
@@ -79,16 +114,16 @@
           </h2>
         </div>
 
-        <div class="h-fit grid grid-cols-1 md:grid-cols-2">
+        <div class="h-fit grid grid-cols-1 lg:grid-cols-2">
           <div class="sm:px-24 px-6 sm:py-12 py-6">
             <div class="sm:mt-16 mt-8">
               <h1
-                class="sm:text-5xl text-4xl font-extrabold text-gray-700 transform origin-left scale-110 tracking-wide"
+                class="sm:text-5xl text-[44px] font-extrabold text-gray-700 transform origin-left sm:scale-110 sm:tracking-wide"
               >
                 Get in touch
               </h1>
               <h3
-                class="my-6 sm:text-3xl text-2xl font-medium  text-lime-600 transform origin-left scale-105 tracking-wide sm:uppercase"
+                class="my-6 sm:text-3xl text-2xl font-medium text-lime-600 transform origin-left scale-105 tracking-wide sm:uppercase"
               >
                 ENERGICO - Agriculture & Garden Care
               </h3>
@@ -119,7 +154,9 @@
             </div>
           </div>
           <div class="bg-slate-100 sm:pb-20 pb-12">
-            <div class="sm:mt-16 mt-8 sm:ps-20 ps-6 sm:pe-28 pe-6 sm:py-12 py-8">
+            <div
+              class="sm:mt-16 mt-8 sm:ps-20 ps-6 sm:pe-28 pe-6 sm:py-12 py-8"
+            >
               <h1
                 class="sm:text-5xl text-[44px] font-extrabold text-gray-700 transform origin-left sm:scale-110 sm:tracking-wide"
               >
@@ -136,17 +173,17 @@
             <div class="sm:ps-20 ps-4 sm:pe-28 pe-4 sm:py-4">
               <form class="flex flex-col gap-4" action="">
                 <input
-                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm  placeholder-opacity-75"
+                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm placeholder-opacity-75"
                   type="text"
                   placeholder="Your name"
                 />
                 <input
-                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm  placeholder-opacity-75"
+                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm placeholder-opacity-75"
                   type="email"
                   placeholder="Your email"
                 />
                 <input
-                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm  placeholder-opacity-75"
+                  class="w-full sm:py-6 py-4 sm:px-8 px-4 border-2 border-lime-500 rounded-3xl placeholder:text-black sm:placeholder:text-xl text-sm placeholder-opacity-75"
                   type="text"
                   placeholder="Phone"
                 />
@@ -194,9 +231,7 @@
                     "
                   >
                     <option disabled selected value="">
-                      <span class="sm:text-xl text-sm opacity-75">
-                        What is you average monthly electricity bill?</span
-                      >
+                      What is you average monthly electricity bill?
                     </option>
                     <option class="sm:text-xl text-sm">0-500</option>
                     <option class="sm:text-xl text-sm">500-1000</option>
@@ -228,19 +263,31 @@
         <div class="mt-2 p-3 flex">
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-facebook-f fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.pinterest.com/"
-              ><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>
+              ><i
+                class="fa-brands fa-pinterest-p fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
           </div>
           <div class="w-[70px] px-1 py-3">
             <a href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i>
             </a>
           </div>
         </div>
@@ -250,5 +297,7 @@
         </h2>
       </div>
     </footer>
+
+    <script src="../javascript/script.js"></script>
   </body>
 </html>
