@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   </head>
   <body class="overflow-x-hidden box-border m-0 p-0">
     <header>
@@ -16,32 +22,32 @@
         class="bg-lime-600 flex justify-between items-center text-slate-50 opacity-1.25 px-4"
       >
         <h1 class="text-2xl md:block hidden">Call Us Now: 555 376 7872</h1>
-        <div class="p-3 flex">
-          <div class="p-4">
+        <div class="py-3 flex">
+          <div class="lg:p-4 p-2">
             <a href="https://www.facebook.com/"
               ><i
-                class="fa-brands fa-facebook-f fa-2xl"
+                class="fa-brands fa-facebook-f fa-xl"
                 style="color: #ffffff"
               ></i
             ></a>
           </div>
-          <div class="p-4">
+          <div class="lg:p-4 p-2">
             <a href="https://www.twitter.com/"
-              ><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff"></i
+              ><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff"></i
             ></a>
           </div>
-          <div class="p-4">
+          <div class="lg:p-4 p-2">
             <a href="https://www.pinterest.com/"
               ><i
-                class="fa-brands fa-pinterest-p fa-2xl"
+                class="fa-brands fa-pinterest-p fa-xl"
                 style="color: #ffffff"
               ></i
             ></a>
           </div>
-          <div class="p-4">
+          <div class="lg:p-4 p-2">
             <a href="https://www.instagram.com/">
               <i
-                class="fa-brands fa-instagram fa-2xl"
+                class="fa-brands fa-instagram fa-xl"
                 style="color: #ffffff"
               ></i>
             </a>
@@ -50,10 +56,10 @@
       </div>
 
       <div
-        class="flex lg:justify-center justify-between items-center lg:flex-col px-6 py-6 gap-6"
+        class="flex lg:justify-center justify-between items-center lg:flex-col sm:px-4 py-6 gap-6"
       >
         <img
-          class="lg:w-1/4 md:w-64 sm:w-48"
+          class="lg:w-1/4 md:w-64 sm:w-48 sm:scale-100 scale-90"
           src="./images/logo.png"
           alt="logo"
         />
@@ -70,7 +76,7 @@
           </ul>
         </div>
 
-        <div class="flex flex-col gap-[2px] lg:hidden" onclick="handleMenu()">
+        <div class="flex flex-col gap-[2px] lg:hidden sm:scale-100 scale-75" onclick="handleMenu()">
           <div class="w-[50px] h-[8px] bg-amber-400"></div>
           <div class="w-[50px] h-[8px] bg-amber-400"></div>
           <div class="w-[50px] h-[8px] bg-amber-400"></div>
@@ -94,7 +100,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        
       </div>
     </header>
 
@@ -108,21 +114,21 @@
             class="lg:w-[40%] md:w-[50%] flex flex-col sm:mt-16 mt-28 sm:px-8 px-4"
           >
             <h1
-              class="md:text-5xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
+              class="lg:text-5xl md:text-4xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
             >
               <span class="uppercase">GARDEN CARE</span>
             </h1>
           </div>
           <div class="lg:w-[25%] md:w-[50%] flex flex-col sm:px-8 px-6">
             <h1
-              class="md:text-5xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
+              class="lg:text-5xl md:text-4xl text-3xl text-center text-white font-extrabold inline-block transform md:scale-x-[120%]"
             >
               is our true passion!
             </h1>
           </div>
           <div class="md:w-[38%] text-center my-8">
             <p
-              class="md:text-3xl text-2xl md:px-0 px-5 text-slate-100 md:leading-10 inline-block transform md:scale-x-[120%]"
+              class="lg:text-3xl  text-xl md:px-0 px-5 text-slate-100 md:leading-10 inline-block transform md:scale-x-[120%]"
             >
               SO WHENEVER YOU JUST FEEL YOU NEED A PROFESSIONAL HELPING HAND AT
               YOUR GARDEN, CALL US UP!
@@ -130,7 +136,7 @@
           </div>
 
           <button
-            class="text-white text-[15px] border-2 border-white rounded-full py-4 px-12 md:mt-12 inline-block transform sm:scale-x-[120%]"
+            class="text-white text-[15px] border-2 border-white rounded-full lg:py-4 py-3 lg:px-12 px-8 md:mt-12 inline-block transform sm:scale-x-[120%]"
           >
             FIND OUT MORE
           </button>
@@ -150,29 +156,29 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
           <div
-            class="sm:w-full p-20 text-center flex flex-col items-center justify-center content-center bg-yellow-500"
+            class="sm:w-full lg:p-20 p-14 text-center flex flex-col items-center justify-center content-center bg-yellow-500"
           >
-            <img class="w-fit" src="./images/img4.png" alt="img4" />
-            <h1 class="mt-8 text-3xl inline-block transform scale-x-[120%]">
+            <img class="lg:w-fit w-1/4" src="./images/img4.png" alt="img4" />
+            <h1 class="mt-8 lg:text-3xl text-xl inline-block transform scale-x-[110%]">
               BEST PRACTICING
             </h1>
           </div>
           <div
-            class="sm:w-full p-20 text-center flex flex-col items-center justify-center content-center bg-yellow-400"
+            class="sm:w-full lg:p-20 p-14 text-center flex flex-col items-center justify-center content-center bg-yellow-400"
           >
-            <img class="w-fit" src="./images/img5.png" alt="img5" />
+            <img class="lg:w-fit w-1/4" src="./images/img5.png" alt="img5" />
             <h1
-              class="mt-8 text-3xl inline-block transform scale-x-[120%] text-white"
+              class="mt-8 lg:text-3xl text-xl inline-block transform scale-x-[110%] text-white"
             >
               FIRST PACE
             </h1>
           </div>
           <div
-            class="sm:w-full p-20 text-center flex flex-col items-center justify-center content-center bg-yellow-300"
+            class="sm:w-full lg:p-20 p-14 text-center flex flex-col items-center justify-center content-center bg-yellow-300"
           >
-            <img class="w-fit" src="./images/img6.png" alt="img6" />
+            <img class="lg:w-fit w-1/4" src="./images/img6.png" alt="img6" />
             <h1
-              class="mt-8 text-3xl inline-block transform scale-x-[120%] text-white"
+              class="mt-8 lg:text-3xl text-xl inline-block transform scale-x-[110%] text-white"
             >
               RANGE OF SERVICES
             </h1>
@@ -247,21 +253,21 @@
             class="sm:w-[36%] w-full h-fit flex flex-col text-start justify-center items-start align-middle gap-8 sm:pt-8 pt-16"
           >
             <h1
-              class="sm:text-5xl text-4xl font-extrabold text-gray-700 transform origin-left sm:scale-110"
+              class="lg:text-5xl text-4xl font-extrabold text-gray-700 transform origin-left sm:scale-110"
             >
               Perform to the Highest Standards
             </h1>
 
             <div class="sm:w-full w-[65%]">
               <p
-                class="sm:text-3xl text-xl text-gray-500 text-left leading-[30px]"
+                class="lg:text-3xl text-xl text-gray-500 text-left leading-[30px]"
               >
                 With all kinds of garden design/care, lawn & plants in our
                 range, we're your natural choice!
               </p>
             </div>
             <button
-              class="text-gray-500 sm:text-[16px] text-[12px] font-bold border-2 border-gray-500 rounded-full sm:py-4 py-2 sm:px-16 px-2"
+              class="text-gray-500 sm:text-[16px] text-[12px] font-bold border-2 border-gray-500 rounded-full lg:py-4 py-2 lg:px-16 px-4"
             >
               GET A QUOTE
             </button>
@@ -271,26 +277,26 @@
         <div class="h-fit bg-gray-200 text-center pb-10">
           <div class="sm:pt-[120px] pt-[60px] px-8 py-8">
             <h1
-              class="text-5xl font-extrabold text-gray-700 sm:leading-8 leading-10 transform"
+              class="sm:text-5xl text-4xl font-extrabold text-gray-700 sm:leading-8 leading-10 transform"
             >
               Our Advantages
             </h1>
           </div>
 
           <div
-            class="sm:mt-16 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            class="sm:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           >
             <div
               class="p-8 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img13.png" alt="img13" />
+              <img class="w-fit" src="./images/img13.png" alt="img13" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 CREATIVE IDEAS
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 Serving everyone from household owners to hotels and office, we
                 make sure to provide a truly full-cycle range of exterior
@@ -300,14 +306,14 @@
             <div
               class="p-8 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img15.png" alt="img15" />
+              <img class="w-fit" src="./images/img15.png" alt="img15" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 DECORATION
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 It does not really matter is it the Christmas time of the year
                 or not, priming your house with some decorative elements or
@@ -317,14 +323,14 @@
             <div
               class="p-8 text-center flex flex-col items-center justify-start bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img17.png" alt="img17" />
+              <img class="w-fit" src="./images/img17.png" alt="img17" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 GARDEN DESIGN
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 Did you ever consider giving your house exterior or your
                 landscape a unique look, implementing some superb design ideas
@@ -334,14 +340,14 @@
             <div
               class="p-8 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img14.png" alt="img14" />
+              <img class="w-fit" src="./images/img14.png" alt="img14" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 EXPERT ADVICE
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 Regardless of how crazy your exterior idea is, our team of
                 design-and-build experts will easily turn it into reality! This
@@ -351,14 +357,14 @@
             <div
               class="p-8 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img16.png" alt="img16" />
+              <img class="w-fit" src="./images/img16.png" alt="img16" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 FRIENDLY PRICES
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 Having so much to offer, we also would love to give you the best
                 pricing on all of our services! This means that as compared to
@@ -368,14 +374,14 @@
             <div
               class="py-8 px-10 text-center flex flex-col items-center justify-start content-center bg-transparent"
             >
-              <img class="w-fit my-3" src="./images/img18.png" alt="img18" />
+              <img class="w-fit" src="./images/img18.png" alt="img18" />
               <h1
-                class="my-5 text-3xl font-semibold text-lime-600 transform scale-x-[120%]"
+                class="my-5 sm:text-3xl text-2xl font-semibold text-lime-600 transform scale-x-[120%]"
               >
                 SOFTSCAPES
               </h1>
               <p
-                class="md:px-5 px-0 text-3xl text-gray-500 leading-relaxed text-center tracking-wide"
+                class="md:px-5 px-0 lg:text-3xl text-2xl text-gray-500 leading-relaxed text-center tracking-wide"
               >
                 Softscaping is the total opposite for the hardscaping in that it
                 is neither as long lasting as the hard structure, nor it is made
@@ -399,11 +405,11 @@
               <div class="w-full">
                 <img class="w-full" src="./images/img21.jpg" alt="img21" />
               </div>
-              <div class="sm:mt-8 sm:p-0 p-8">
-                <h3 class="py-4 text-3xl font-medium text-gray-500">
+              <div class="md:mt-8 sm:p-0 p-8">
+                <h3 class="py-4 lg:text-3xl text-2xl font-medium text-gray-500">
                   THE LESS CHEMICALS YOU USE, THE BETTER!
                 </h3>
-                <p class="text-3xl text-gray-500">
+                <p class="lg:text-3xl text-2xl text-gray-500">
                   So, we guess that if you're reading this blog entry now, you
                   are an avid gardener yourself, right? Which in turn means that
                   as we're talking about the ways to compost your garden, the
@@ -416,10 +422,10 @@
                 <img class="w-full" src="./images/img20.jpg" alt="img21" />
               </div>
               <div class="sm:mt-8 sm:p-0 p-8">
-                <h3 class="py-4 text-3xl font-medium text-gray-500">
+                <h3 class="py-4 lg:text-3xl text-2xl font-medium text-gray-500">
                   THE LESS CHEMICALS YOU USE, THE BETTER!
                 </h3>
-                <p class="text-3xl text-gray-500">
+                <p class="lg:text-3xl text-2xl text-gray-500">
                   So, we guess that if you're reading this blog entry now, you
                   are an avid gardener yourself, right? Which in turn means that
                   as we're talking about the ways to compost your garden, the
